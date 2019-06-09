@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WhatsApp Status Saver</string>
+    <string name="tab_text_1">Images</string>
+    <string name="tab_text_2">Videos</string>
+</resources>
