@@ -35,7 +35,8 @@ GridView simpleGrid;
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent=new Intent(getActivity(), VideoActivity.class);
-                intent.putExtra("videoPath",videoPaths[position]);
+                intent.putExtra("videoPaths",videoPaths);
+                intent.putExtra("videoPos",position);
                 startActivity(intent);
             }
         });

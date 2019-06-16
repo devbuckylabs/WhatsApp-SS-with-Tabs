@@ -45,7 +45,9 @@ public class Fragment1 extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent=new Intent(getActivity(), ImageActivity.class);
-                intent.putExtra("imagePath",imagePaths[position]);
+                intent.putExtra("imagePaths",imagePaths);
+                intent.putExtra("imagePos",position);
+
                 startActivity(intent);
             }
         });
